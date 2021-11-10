@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<!-- 모바일 대응을 위한 뷰포트 기본 설정 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>버전4 샘플 페이지</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+			<h1>아래로<br />스크롤해 보면</h1>
+	</header>
+	<main>
+		<section>
+			<div class="sa sa-up">디비전 1</div>
+			<div class="sa sa-up" data-sa-delay="200">디비전 2</div>
+			<div class="sa sa-up" data-sa-delay="400">디비전 3</div>
+			<div class="sa sa-up" data-sa-delay="600">디비전 4</div>
+		</section>
+		<section>
+			<div class="sa sa-up" id="saDiv5">디비전 5</div>
+			<div class="sa sa-down" data-sa-trigger="#saDiv5">디비전 6</div>
+			<div class="sa sa-right" data-sa-trigger="#saDiv5">디비전 7</div>
+			<div class="sa sa-left" data-sa-trigger="#saDiv5">디비전 8</div>
+		</section>
+		<section>
+			<div class="sa sa-rotateL" id="saDiv9">디비전 9</div>
+			<div class="sa sa-rotateR">디비전 10</div>
+			<div class="sa sa-scaleUp" data-sa-trigger="#saDiv9">디비전 11</div>
+			<div class="sa sa-scaleDown" data-sa-trigger="#saDiv9">디비전 12</div>
+		</section>
+	</main>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

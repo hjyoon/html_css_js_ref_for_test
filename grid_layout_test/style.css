@@ -1,0 +1,29 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+	grid-template-rows: repeat(5, minmax(50px,auto));
+	grid-auto-flow: dense;
+}
+
+.item {
+	background-color: dodgerblue;
+	margin: 3px;
+}
+
+.item:nth-child(1) {
+	grid-column: auto / span 2;
+	grid-row: auto / span 2;
+}
+.item:nth-child(3) {
+	grid-column: auto / span 2;
+}
+.item:nth-child(5) {
+	grid-column: auto / span 3;
+}
+.item:nth-child(6) {
+	grid-column: auto / span 1;
+	grid-row: auto / span 2;
+}
+.item:nth-child(7) {
+	grid-column: auto / span 2;
+}
